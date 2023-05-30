@@ -66,7 +66,8 @@ function TimePicker({
    };
 
    return (
-      <>
+      <PortalWithState closeOnOutsideClick closeOnEsc>
+  
          <div className="react-ios-time-picker-main" onClick={handleClick}>
             <input
                id={id}
@@ -92,7 +93,8 @@ function TimePicker({
                </div>
             </Portal>
          )}
-      </>
+
+      </PortalWithState>
    );
 }
 
